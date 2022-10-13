@@ -32,6 +32,18 @@ h1, h2, h3, h4, h5, p, ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -566,15 +578,48 @@ img {
 .footer-item:not(:last-child) {
   margin-right: 10px;
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-  }
+
+.form {
+}
+.form-field {
+  margin-left: 93px;
+}
+.subscribe-label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.subscribe-input {
+  padding: 15px 15px 15px;
+  width:355px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+.send-icon {
+  margin-left: 10px;
+}
+.flex {
+  display: flex;
+}
