@@ -232,6 +232,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 .modal-label {
   display: block;
@@ -239,13 +240,17 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  text-align: left;
   color: var(--secondary-text-color);
 }
+.icon-box {
+  position: relative;
+  width: 100%;
+}
 .modal-input {
-  padding: 14px 0;
   padding-left: 35px;
   width: 100%;
-  margin-bottom: 10px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
@@ -258,7 +263,7 @@ img {
   height: 18px;
   left: 12px;
   top: 50%;
-  transform: translateY(-25%);
+  transform: translateY(-50%);
   fill: currentColor;
   transition: color 250ms var(--cubic);
 }
@@ -271,8 +276,10 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.textarea {
+.textarea-box {
   margin-bottom: 20px;
+}
+.textarea {
   width: 100%;
   height: 120px;
   resize: none;
@@ -299,11 +306,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.checkbox {
+  margin-bottom: 30px;
 }
 .checkbox-input {
   -webkit-appearance: none;
@@ -330,18 +340,21 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
-  padding: 6px;
-  border: 0;
+  padding: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--logo-color);
   background: #FFFFFF;
-  background-size: 18px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transition: color 250ms var(--cubic);
 }
 .close-icon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   width: 18px;
   height: 18px;
   fill: currentColor;
